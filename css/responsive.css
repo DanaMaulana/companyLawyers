@@ -1,0 +1,165 @@
+/* Responsive Breakpoint */
+@media (max-width: 991px) {
+
+  header,
+  header.sticky {
+    padding: 10px 20px;
+  }
+
+  header .navigation {
+    display: none;
+  }
+
+  header .navigation.active {
+    width: 100%;
+    height: calc(100% - 68px);
+    position: fixed;
+    top: 68px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+  }
+
+  header .navigation li {
+    margin-left: 0;
+  }
+
+  header .navigation li a {
+    color: #111;
+    font-size: 1.6em;
+  }
+
+  .menuToggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(../img/menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  .menuToggle.active {
+    background: url(../img/close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 999;
+  }
+
+  header.sticky .menuToggle {
+    filter: invert(1);
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .banner .jumbotron .content h3 {
+    font-size: 1.5em;
+    color: #fff;
+  }
+
+  .banner .jumbotron .content h3 span {
+    margin-top: 1px;
+    margin-bottom: 5px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .row .col50 {
+    position: relative;
+    width: 100%;
+  }
+
+  .row .col50 .imgBox {
+    height: 300px;
+    margin-top: 20px;
+  }
+
+  .about {
+    padding: 90px;
+  }
+
+  .about .content {
+    margin-top: 20px;
+  }
+
+  .about .content .box {
+    margin: 10px;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .titleText {
+    font-size: 1.8em;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 300;
+  }
+
+  .service {
+    padding-top: 90px;
+  }
+
+  .service .title {
+    position: relative;
+  }
+
+  /* .service .service-body {
+    margin-top: -50px;
+  } */
+
+  .people {
+    padding-top: 90px;
+  }
+
+  .people .content {
+    margin-top: 15px;
+  }
+
+  .contactForm {
+    padding: 35px 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .banner .content h3 {
+    font-size: 2.2em;
+    color: #fff;
+    text-shadow: 0 5px 5px #000;
+  }
+
+  .banner .content p {
+    font-size: 1.2em;
+    color: #fff;
+    text-shadow: 0 5px 5px #000;
+  }
+
+  .banner .inner-content {
+    align-self: center;
+  }
+
+  .banner .inner-content p {
+    font-size: 1.2em;
+    font-weight: 300;
+    text-shadow: 0 5px 5px #000;
+  }
+
+  .about {
+    padding: 90px 10px 0;
+  }
+}
